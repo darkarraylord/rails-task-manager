@@ -1,0 +1,9 @@
+<%= form_for(@task) do |f| %>
+  <div class="form-group">
+  <%= f.text_field :title, placeholder: "Enter a title" %>
+  <%= f.text_field :description, placeholder: "Enter a descriptino" %>
+  </div>
+  <%= f.submit %>
+
+<% end %>
+<%= link_to "Cancel", tasks_path %>
